@@ -22,7 +22,7 @@
 //     }
 // }
 
-pipelinr{
+pipeline{
     agent any
     stages{
         stage("Listening the FIles"){
