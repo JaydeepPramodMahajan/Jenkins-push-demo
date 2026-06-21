@@ -43,13 +43,13 @@ pipeline{
     }
     post{
         always{
-            bat "Finished Succesfully"
+            echo "Finished Succesfully"
         }
         success{
-            bat "Run Succesfully XXXXXX"
+            echo "Run Succesfully XXXXXX"
         }
         failure{
-            bat "------------++=+++_-------Error"
+            echo "------------++=+++_-------Error"
         }
     }
 }
