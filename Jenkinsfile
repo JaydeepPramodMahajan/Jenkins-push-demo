@@ -47,13 +47,13 @@ pipeline{
         }
         stage("Docker run alpine"){
             steps{
-                bat 'docker run -it --name AlpineRun alpine'
-                bat 'docker ps -a'
+                    bat 'docker run --rm alpine echo Hello from Alpine'
+                  bat 'docker ps -a'
             }
         }
         
         stage("removing the apline"){
-            steps{
+            step{
                 bat 'docker rm AlpineRun'
             }
         }
