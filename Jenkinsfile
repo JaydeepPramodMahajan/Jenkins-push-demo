@@ -51,12 +51,7 @@ pipeline{
                 bat 'docker ps -a'
             }
         }
-        stage("Basics Alpine commnads"){
-            step{
-                 bat '''docker run --rm alpine:latest sh -c "echo Current Directory: && pwd && echo && echo Listing Files: && ls -la && echo && echo Kernel Info: && uname -a"
-                 '''
-                 }
-        }
+        
         stages("removiung the apline"){
             step{
                 bat 'docker rm AlpineRun'
