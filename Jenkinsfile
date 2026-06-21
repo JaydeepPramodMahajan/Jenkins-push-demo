@@ -52,7 +52,7 @@ pipeline{
             }
         }
         
-        stages("removiung the apline"){
+        stage("removing the apline"){
             step{
                 bat 'docker rm AlpineRun'
             }
